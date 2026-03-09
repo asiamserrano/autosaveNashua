@@ -1,0 +1,4 @@
+ID Level	Terminology             Update Trigger              Stability
+Global      Canonical DID           Never (Immutable)	        Permanent
+State       Recovery/State Hash     Security reset / Key loss	Semi-Stable
+Document	Version/Content Hash	Any minor data change       Frequent
