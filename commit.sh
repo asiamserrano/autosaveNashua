@@ -12,7 +12,6 @@ git add .gitignore
 git add commit.sh
 
 #git add autosaveBeta.xcodeproj/*
-git add autosaveNashua/Assets.xcassets/*
 git add README.md
 
 
