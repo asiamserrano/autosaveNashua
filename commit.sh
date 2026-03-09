@@ -3,6 +3,7 @@
 # add all swift files
 git add \*.swift
 git add PreviewStores/*
+git add Resources/*
 git add \*.txt
 git add \*.pages
 
@@ -12,7 +13,7 @@ git add commit.sh
 
 #git add autosaveBeta.xcodeproj/*
 #git add Assets.xcassets/
-#git add README.md
+git add README.md
 
 
 # commit, push, status
