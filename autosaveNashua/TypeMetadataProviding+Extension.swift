@@ -8,8 +8,8 @@
 import Foundation
 import Core
 
-extension TypeMetadataProviding {
-    
-    public typealias UUIDNamespace = UUID.Namespace
-
-}
+//extension TypeMetadataProviding {
+//    
+//    public typealias UUIDNamespace = UUID.Namespace
+//
+//}

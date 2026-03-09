@@ -124,12 +124,10 @@ extension Game {
             self.added = .now
             self.uuid = uuid
         }
-        
-        public var strictTitle: String { self.title.trimmed }
-         
+                 
         private var autonomic: AutonomicID {
-            let strict = uuid(self.strictTitle)
-            let fuzzy = uuid(self.title.canonicalized)
+            let strict = uuid(self.title.strict)
+            let fuzzy = uuid(self.title.fuzzy)
             let multiHashID: MultiHashID = .init(strictHashID: strict, fuzzyHashID: fuzzy)
             let globalID = GlobalID(stableID: self.uuid)
             return .init(multiHashID, globalID)

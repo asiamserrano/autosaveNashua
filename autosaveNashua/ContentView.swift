@@ -9,32 +9,40 @@ import SwiftUI
 import SwiftData
 import Core
 
+//public protocol SelfTypefReferencing {
+//    typealias Protocol = SelfTypefReferencing
+//}
+//
+//extension SelfTypefReferencing {
+//    
+//    static var myTypeSelf: String { String(reflecting: Reference.Type.self) }
+//    static var mySelf: String { String(reflecting: Reference.self) }
+//    
+//}
+//
+//public struct MyStruct: MyProtocol { }
+
 struct ContentView: View {
     
     @Environment(\.modelContext) private var modelContext
     
     @Query private var items: [Item]
     
-    let date: Date = .now
-
     var body: some View {
         NavigationStack {
             Form {
                 
-                SpacedLabel("long", date.long)
-                SpacedLabel("dashes", date.dashed)
-                SpacedLabel("sinceReference", date.sinceReference)
-                SpacedLabel("since1970", date.since1970)
+                Section("Constants") {
+                    SpacedLabel("Contract", Constants.contract.string)
+                    SpacedLabel("NS", Constants.namespace.string)
+                }
                 
-//                SpacedLabel("APP_NAME", APP_NAME)
-//                SpacedLabel("APP_DIRECTORY", APP_DIRECTORY)
-//                
-//                SpacedLabel("random", .random)
-//                SpacedLabel("name", .randomName)
-//                SpacedLabel("random 2", .random(2))
+                Section("Game") {
+                    SpacedLabel("Contract", Game.contract.string)
+                    SpacedLabel("NS", Game.namespace.string)
+                }
 
-//                SpacedLabel("STRINGS_FILE_PATH", STRINGS_FILE_PATH)
-                
+
             }
             .toolbar {
                
