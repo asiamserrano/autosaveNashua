@@ -7,7 +7,7 @@
 //
 //import Foundation
 //import SwiftData
-//import Core
+//import autosaveNashuaPackage
 //
 //@Model
 //public final class Property: Attribute.Model.Interface {

@@ -6,7 +6,7 @@
 //
 
 import Foundation
-import Core
+import autosaveNashuaPackage
 
 //extension TypeMetadataProviding {
 //    

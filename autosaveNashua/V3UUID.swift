@@ -7,7 +7,7 @@
 //
 //import Foundation
 //import CryptoKit
-//import Core
+//import autosaveNashuaPackage
 //
 //public typealias FunctionalUUIDNamespace = FunctionalUUID.Namespace
 ////public typealias UUIDNamespace = FunctionalUUIDNamespace
