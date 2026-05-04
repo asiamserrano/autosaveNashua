@@ -7,8 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		84CE20282F5D102F00623D34 /* Core in Frameworks */ = {isa = PBXBuildFile; productRef = 84C9E5192F5D002F0086B1CB /* Core */; };
-		84CE20332F5D10B600623D34 /* Core in Frameworks */ = {isa = PBXBuildFile; productRef = 84CE20322F5D10B600623D34 /* Core */; };
+		1E22F28D2F5FAEC400C997A8 /* ModelContext+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E22F28C2F5FAEC400C997A8 /* ModelContext+Extension.swift */; };
+		84CC89282F913B7900755CB6 /* autosaveNashuaPackage in Frameworks */ = {isa = PBXBuildFile; productRef = 84CC89272F913B7900755CB6 /* autosaveNashuaPackage */; };
 		84CE20E42F5E151A00623D34 /* autosaveNashuaApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84CE20DF2F5E151A00623D34 /* autosaveNashuaApp.swift */; };
 		84CE20E52F5E151A00623D34 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84CE20E02F5E151A00623D34 /* ContentView.swift */; };
 		84CE20E62F5E151A00623D34 /* Item.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84CE20E12F5E151A00623D34 /* Item.swift */; };
@@ -22,6 +22,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		1E22F28C2F5FAEC400C997A8 /* ModelContext+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ModelContext+Extension.swift"; sourceTree = "<group>"; };
 		84C9E4F82F5CFF180086B1CB /* autosaveNashua.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = autosaveNashua.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		84CE20DE2F5E151A00623D34 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		84CE20DF2F5E151A00623D34 /* autosaveNashuaApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = autosaveNashuaApp.swift; sourceTree = "<group>"; };
@@ -48,14 +49,20 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				84CE20282F5D102F00623D34 /* Core in Frameworks */,
-				84CE20332F5D10B600623D34 /* Core in Frameworks */,
+				84CC89282F913B7900755CB6 /* autosaveNashuaPackage in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1E6EF04D2F68C10300678DFA /* New Group */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "New Group";
+			sourceTree = "<group>";
+		};
 		84C9E4EF2F5CFF180086B1CB = {
 			isa = PBXGroup;
 			children = (
@@ -80,12 +87,14 @@
 				84CE20FD2F5E3C8500623D34 /* Notes.txt */,
 				84CE20FB2F5E234900623D34 /* V3UUID.swift */,
 				84CE20FF2F5E628E00623D34 /* UUID+Extension.swift */,
-				84CE21012F5E62EE00623D34 /* TypeMetadataProviding+Extension.swift */,
 				84CE20F52F5E156100623D34 /* Model */,
+				84CE21012F5E62EE00623D34 /* TypeMetadataProviding+Extension.swift */,
+				1E6EF04D2F68C10300678DFA /* New Group */,
 				84CE20DF2F5E151A00623D34 /* autosaveNashuaApp.swift */,
 				84CE20E02F5E151A00623D34 /* ContentView.swift */,
 				84CE20E12F5E151A00623D34 /* Item.swift */,
 				84CE20E22F5E151A00623D34 /* ModelContainer+Extension.swift */,
+				1E22F28C2F5FAEC400C997A8 /* ModelContext+Extension.swift */,
 			);
 			path = autosaveNashua;
 			sourceTree = "<group>";
@@ -110,8 +119,8 @@
 			);
 			name = autosaveNashua;
 			packageProductDependencies = (
-				84C9E5192F5D002F0086B1CB /* Core */,
-				84CE20322F5D10B600623D34 /* Core */,
+				1EF552832F8D5D2300C3F450 /* autosaveNashuaPackage */,
+				84CC89272F913B7900755CB6 /* autosaveNashuaPackage */,
 			);
 			productName = autosaveNashua;
 			productReference = 84C9E4F82F5CFF180086B1CB /* autosaveNashua.app */;
@@ -125,7 +134,7 @@
 			attributes = {
 				BuildIndependentTargetsInParallel = 1;
 				LastSwiftUpdateCheck = 2630;
-				LastUpgradeCheck = 2630;
+				LastUpgradeCheck = 2640;
 				TargetAttributes = {
 					84C9E4F72F5CFF180086B1CB = {
 						CreatedOnToolsVersion = 26.3;
@@ -142,7 +151,7 @@
 			mainGroup = 84C9E4EF2F5CFF180086B1CB;
 			minimizedProjectReferenceProxies = 1;
 			packageReferences = (
-				84CE20312F5D10B600623D34 /* XCLocalSwiftPackageReference "../autosavePackage/autosavePackage" */,
+				84CC89262F913B7900755CB6 /* XCLocalSwiftPackageReference "../autosavePackages/autosaveNashuaPackage" */,
 			);
 			preferredProjectObjectVersion = 77;
 			productRefGroup = 84C9E4F92F5CFF180086B1CB /* Products */;
@@ -172,6 +181,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				84CE20E42F5E151A00623D34 /* autosaveNashuaApp.swift in Sources */,
+				1E22F28D2F5FAEC400C997A8 /* ModelContext+Extension.swift in Sources */,
 				84CE20E52F5E151A00623D34 /* ContentView.swift in Sources */,
 				84CE20E62F5E151A00623D34 /* Item.swift in Sources */,
 				84CE20FA2F5E159000623D34 /* PersistentHashID.swift in Sources */,
@@ -244,6 +254,7 @@
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
+				STRING_CATALOG_GENERATE_SYMBOLS = YES;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
@@ -301,6 +312,7 @@
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
+				STRING_CATALOG_GENERATE_SYMBOLS = YES;
 				SWIFT_COMPILATION_MODE = wholemodule;
 				VALIDATE_PRODUCT = YES;
 			};
@@ -394,20 +406,20 @@
 /* End XCConfigurationList section */
 
 /* Begin XCLocalSwiftPackageReference section */
-		84CE20312F5D10B600623D34 /* XCLocalSwiftPackageReference "../autosavePackage/autosavePackage" */ = {
+		84CC89262F913B7900755CB6 /* XCLocalSwiftPackageReference "../autosavePackages/autosaveNashuaPackage" */ = {
 			isa = XCLocalSwiftPackageReference;
-			relativePath = ../autosavePackage/autosavePackage;
+			relativePath = ../autosavePackages/autosaveNashuaPackage;
 		};
 /* End XCLocalSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
-		84C9E5192F5D002F0086B1CB /* Core */ = {
+		1EF552832F8D5D2300C3F450 /* autosaveNashuaPackage */ = {
 			isa = XCSwiftPackageProductDependency;
-			productName = Core;
+			productName = autosaveNashuaPackage;
 		};
-		84CE20322F5D10B600623D34 /* Core */ = {
+		84CC89272F913B7900755CB6 /* autosaveNashuaPackage */ = {
 			isa = XCSwiftPackageProductDependency;
-			productName = Core;
+			productName = autosaveNashuaPackage;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};
